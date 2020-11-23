@@ -25,8 +25,6 @@ app.post('/api/login', (req, res) => {
 app.get('/api/staff', verifyToken, (req, res) => {
     const staff = [
         { id: 1, name: 'Hakim', job: 'Programmer' },
-        { id: 2, name: 'Faiz', job: 'Business Man' },
-        { id: 3, name: 'Aman', job: 'Engineer' }
     ];
 
     res.send(staff);
